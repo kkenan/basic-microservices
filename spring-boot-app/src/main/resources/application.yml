@@ -11,6 +11,6 @@ spring:
       temp.use_jdbc_metadata_defaults: false
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/javadb
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://localhost:5432/demodb
+    username: demouser
+    password: DemoPa$$
