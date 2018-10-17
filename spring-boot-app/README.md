@@ -9,7 +9,7 @@ The following is a list of requirements:
  
 ## Description
 
-This is a simple spring-boot app. The application connects to postgres database (connection defined in `application.ym`) and connects to node-app.
+This is a simple spring-boot app. The application connects to postgres database (connection defined in `application.yml`) and connects to node-app.
 
 ```
 GET /java/api/v1/status
@@ -51,3 +51,9 @@ To run this jar, use:
 `java -jar target/spring-boot-app-1.0-SNAPSHOT.jar`
 
 The app will listen on port `8080`.
+
+In order to start application with custom config file pass `--spring.config.location` argument to java command, for example:
+
+`java -jar target/spring-boot-app-1.0-SNAPSHOT.jar --spring.config.location=my-conf.yml`
+
+Use `spring-boot-app/src/main/resources/application.yml` as reference to see which properties are available.
